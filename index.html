@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CodEzra</title>
+    
+    <meta name="description" content="Professzionális weboldal készítés egyedi designnal és SEO optimalizálással. Modern, reszponzív webfejlesztés vállalkozásoknak, olcsó weboldal.">
+    <meta name="keywords" content="weboldal készítés, webfejlesztés, reszponzív design, SEO optimalizálás, egyedi weboldal, Bellér Zoltán Ezra, portfólió, webdesign, modern weboldal, olcsó, weboldal">
+    <meta name="author" content="Bellér Zoltán Ezra">
+    
+    <meta property="og:title" content="CodEzra | Webfejlesztési Szolgáltatások">
+    <meta property="og:description" content="Alakítsa át ötleteit valósággá innovatív digitális megoldásainkkal.">
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="./css/main.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+
+</head>
+<body>
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loader"></div>
+    </div>
+
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="#home" class="logo">CodEzra</a>
+                <nav class="nav">
+                    <ul class="nav-menu" id="navMenu">
+                        <li><a href="#home" class="nav-link active" data-section="home">Főoldal</a></li>
+                        <li><a href="#services" class="nav-link" data-section="services">Szolgáltatások</a></li>
+                        <li><a href="#portfolio" class="nav-link" data-section="portfolio">Munkáim</a></li>
+                        <li><a href="#about" class="nav-link" data-section="about">Rólam</a></li>
+                        <li><a href="#contact" class="nav-link" data-section="contact">Kapcsolat</a></li>
+                    </ul>
+                    <button class="mobile-menu-btn" id="mobileMenuBtn" title="Mobil menü váltása">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+            <a href="#home" class="logo">Bellér Zoltán Ezra</a>
+            <button class="mobile-menu-btn" id="closeMobileMenu" title="Menü bezárása">
+                <i class="fas fa-times"></i>
+            </button>            
+        </div>
+        <ul class="mobile-nav-menu">
+            <li><a href="#home" class="mobile-nav-link" data-section="home">Főoldal</a></li>
+            <li><a href="#services" class="mobile-nav-link" data-section="services">Szolgáltatások</a></li>
+            <li><a href="#portfolio" class="mobile-nav-link" data-section="portfolio">Munkáim</a></li>
+            <li><a href="#about" class="mobile-nav-link" data-section="about">Rólam</a></li>
+            <li><a href="#contact" class="mobile-nav-link" data-section="contact">Kapcsolat</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container d-flex justify-center">
+                <div class="hero-content">
+                    <h1 class="hero-title">Alakítsa át digitális vízióját</h1>
+                    <p class="hero-subtitle">Lenyűgöző weboldalakat és digitális élményeket hozok létre, amelyek magukkal ragadják közönségét és eredményeket generálnak.</p>
+                    <div class="hero-buttons">
+                        <a href="#portfolio" class="btn btn-primary">
+                            <i class="fas fa-rocket"></i>
+                            Munkáim megtekintése
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div>Görgessen le</div>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </section>
+
+        <section id="services" class="section">
+            <div class="container">
+                <h2 class="section-title fade-in">Szolgáltatásaim</h2>
+                <p class="section-subtitle fade-in">Átfogó digitális megoldásokat kínálok, hogy vállalkozása virágozzon</p>
+                <div class="services-grid">
+                    <div class="service-card fade-in">
+                        <div class="service-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3 class="service-title">Egyedi Weboldal Fejlesztés</h3>
+                        <p class="service-description">Modern, reszponzív és felhasználóbarát weboldalak tervezése és fejlesztése, a legújabb technológiákkal.</p>
+                    </div>
+                    <div class="service-card fade-in">
+                        <div class="service-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h3 class="service-title">SEO Optimalizálás</h3>
+                        <p class="service-description">Weboldalad keresőmotor-optimalizálása, hogy magasabb helyezést érj el a Google találati listáján, és több organikus forgalmat terelj az oldaladra.</p>
+                    </div>
+                    <div class="service-card fade-in">
+                        <div class="service-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3 class="service-title">Reszponzív Design</h3>
+                        <p class="service-description">Biztosítom, hogy weboldalad tökéletesen jelenjen meg minden eszközön: asztali gépen, tableten és mobilon egyaránt, optimalizált felhasználói élményt nyújtva.</p>
+                    </div>
+                    <div class="service-card fade-in">
+                        <div class="service-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h3 class="service-title">Webdesign és Arculattervezés</h3>
+                        <p class="service-description">Vonzó és professzionális vizuális megjelenés kialakítása, amely tükrözi márkád identitását és emlékezetessé teszi weboldaladat.</p>
+                    </div>
+                    <div class="service-card fade-in">
+                        <div class="service-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <h3 class="service-title">E-commerce Megoldások</h3>
+                        <p class="service-description">Komplett webáruházak biztonságos fizetési rendszerekkel és készletkezeléssel, hogy online értékesítései fellendüljenek.</p>
+                    </div>
+                    <div class="service-card fade-in">
+                        <div class="service-icon">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <h3 class="service-title">Cloud és Hosting Tanácsadás</h3>
+                        <p class="service-description">Skálázható felhőinfrastruktúra és telepítési megoldások modern vállalkozások számára, a weboldalad stabil és gyors működéséhez.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="section" style="background: var(--bg-light);">
+            <div class="container">
+                <h2 class="section-title fade-in">Legújabb Munkáim</h2>
+                <p class="section-subtitle fade-in">Fedezze fel legújabb projektjeim és kreatív megoldásaimat</p>
+            
+
+                <div class="portfolio-grid" id="portfolioGrid">
+                    <div class="portfolio-item fade-in" data-category="app">
+                        <div class="portfolio-image">
+                            <img src="./images/signaler.png" alt="Signaler weboldal előnézete" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3 class="portfolio-title">Signaler.hu - Tőzsdei Indikátorok</h3>
+                            <p class="portfolio-category">Webalkalmazás</p>
+                            <a href="https://signaler.hu" target="_blank" aria-label="Signaler weboldal megtekintése" class="external-link"><i class='fas fa-external-link-alt'></i></a>
+                        </div>
+                    </div>
+                    <div class="portfolio-item fade-in" data-category="ecommerce">
+                        <div class="portfolio-image">
+                            <img src="./images/senkisem.png" alt="Senkisem weboldal előnézete" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3 class="portfolio-title">Senkisem - Ruhamárka Webshop</h3>
+                            <p class="portfolio-category">Webshop</p>
+                            <a href="https://senkisem.hu" target="_blank" aria-label="Senkisem weboldal megtekintése" class="external-link"><i class='fas fa-external-link-alt'></i></a>
+                        </div>
+                    </div>
+        </section>
+
+        <section class="section stats">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item fade-in">
+                        <div class="stat-number" data-target="8">0</div>
+                        <div class="stat-label">Elkészült projektek</div>
+                    </div>
+                    <div class="stat-item fade-in">
+                        <div class="stat-number" data-target="8">0</div>
+                        <div class="stat-label">Elégedett ügyfelek</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<section id="about" class="section">
+    <style>
+        /* Alapértelmezett stílusok nagy képernyőkhöz */
+        .about-content-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            margin-top: 3rem;
+        }
+
+        .about-image img {
+            max-width: 100%;
+            max-height: 100%;
+            width: auto;
+            height: auto;
+            border-radius: 1rem;
+            object-fit: cover;
+        }
+
+        /* Média lekérdezés kis eszközökhöz (pl. mobil) */
+        @media (max-width: 768px) {
+            .about-content-grid {
+                grid-template-columns: 1fr; /* Egy oszlop mobil nézetben */
+                gap: 2rem; /* Kisebb rés a mobil nézetben */
+            }
+
+            .about-image {
+                order: -1; /* A kép felülre kerül mobil nézetben */
+                text-align: center; /* A kép középre igazítása */
+            }
+
+            .about-image img {
+                max-width: 80%; /* Kisebb kép a mobil nézetben */
+                height: auto;
+            }
+        }
+    </style>
+    <div class="container">
+        <h2 class="section-title fade-in">Rólam</h2>
+        
+        <div class="about-content-grid">
+            <div class="slide-in-left">
+                <h3 style="font-size: 2rem; margin-bottom: 1.5rem; color: var(--text-dark);">A történetem</h3>
+                <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 2rem;">
+                    Bellér Zoltán Ezra vagyok – webfejlesztő, vizuális gondolkodó és vállalkozó.
+A kód és a design számomra nem különálló dolgok, hanem eszközök arra, hogy értékes és működő digitális élményeket hozzak létre.
+
+Saját projekteken keresztül tanultam bele a fejlesztésbe, és azóta is rendszerben gondolkodva, üzleti szemlélettel dolgozom. Fontos számomra, hogy amit építek, ne csak látványos legyen, hanem funkcionálisan is helytálljon.
+
+Hiszek a tiszta kommunikációban, az átgondolt struktúrákban és a folyamatos fejlődésben – akár egy új projekt, akár egy hosszú távú együttműködés során.
+                </p>
+                <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 2rem;">
+                    Tudásom és tapasztalatom kiterjed a vizuális tervezésre, a felhasználói élmény (UX) optimalizálására és a keresőoptimalizálásra (SEO), hogy weboldalad ne csak jól nézzen ki, hanem könnyen megtalálható is legyen a Google-ben. Hiszek a személyre szabott megoldásokban és a folyamatos kommunikációban, hogy a végeredmény pontosan megfeleljen az elképzeléseidnek.
+                </p>
+                <a href="https://bellerzoltanezra.hu" class="btn btn-primary" target="_blank">Önéletrajz Megtekintése</a>
+            </div>
+            <div class="slide-in-right about-image">
+                <img src="./images/bze.png" alt="Bellér Zoltán Ezra portréja">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="home" class="hero">
+    <div class="container d-flex justify-center">
+        <div class="hero-content">
+            <h1 class="hero-title">Weboldal 20.000 Ft-ért? Megoldjuk!</h1>
+            <p class="hero-subtitle">Szerezzen professzionális statikus weboldalt mindössze 20.000 Ft-ért! Nincsenek rejtett költségek. Indítsa el online jelenlétét most!</p>
+            <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-outline">
+                            <i class="fa fa-comments" aria-hidden="true"></i>
+                            Kezdjük el!
+                        </a>
+                </div>
+        </div>
+    </div>
+</section>
+
+<section id="for-sale" class="section">
+    <div class="container for-sale-bg">
+        <h2 class="section-title fade-in">Eladó weboldalak</h2>
+        <p class="section-subtitle fade-in">Kiváló lehetőségek azonnali induláshoz, rejtett költségek nélkül.</p>
+        <div class="for-sale-grid">
+            <div class="sale-card fade-in">
+                <h3 class="sale-title">Linkfluencer - Affiliate Platform</h3>
+                <p class="sale-description">Növelje eladásait influenszerekkel! Érje el új vevőket és bővítse piacát hatékony affiliate marketinggel. Kezelje partnereit, generáljon linkeket és kövesse nyomon az eladásokat egy helyen, egyszerűen.</p>
+                <div class="sale-price">750 000 Ft</div>
+                <div class="sale-buttons">
+                    <a href="https://bellerzoltanezra.github.io/linkfluencer/" target="_blank" class="btn btn-secondary">Megtekintés</a>
+                    <a href="#contact" class="btn btn-primary">Érdekel</a>
+                </div>
+            </div>
+            <div class="sale-card fade-in">
+                <h3 class="sale-title">Étterem Büfé</h3>
+                <p class="sale-description">Modern, letisztult weboldal éttermek és büfék számára. Mutassa be étlapját, galériáját és érje el vendégeit online. A weboldal eladásának oka: az ügyfél sajnos kivonult a piacról.</p>
+                <div class="sale-price">120 000 Ft</div>
+                <div class="sale-buttons">
+                    <a href="https://bellerzoltanezra.github.io/bufe/" target="_blank" class="btn btn-secondary">Megtekintés</a>
+                    <a href="#contact" class="btn btn-primary">Érdekel</a>
+                </div>
+            </div>
+            <div class="sale-card fade-in">
+                <h3 class="sale-title">Ingatlan Értékesítő</h3>
+                <p class="sale-description">Találja meg álmai otthonát! Fedezze fel könnyedén az Önhöz illő ingatlanokat – felejtse el a lakáskeresés nehézségeit. Keresőoptimalizált és felhasználóbarát felület, ideális ingatlanosoknak.</p>
+                <div class="sale-price">80 000 Ft</div>
+                <div class="sale-buttons">
+                    <a href="https://bellerzoltanezra.github.io/ingatlan/" target="_blank" class="btn btn-secondary">Megtekintés</a>
+                    <a href="#contact" class="btn btn-primary">Érdekel</a>
+                </div>
+            </div>
+            <div class="sale-card fade-in">
+                <h3 class="sale-title">Prémium Fuvarbérlés</h3>
+                <p class="sale-description">Az utazás, ahol a kényelem és elegancia találkozik. Akár üzleti útra, akár pihenésre érkezik, weboldala garantálja, hogy az utazás már az első perctől prémium élmény legyen. </p>
+                <div class="sale-price">120 000 Ft</div>
+                <div class="sale-buttons">
+                    <a href="https://bellerzoltanezra.github.io/fuvar-sablon/" target="_blank" class="btn btn-secondary">Megtekintés</a>
+                    <a href="#contact" class="btn btn-primary">Érdekel</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title fade-in">Lépj Kapcsolatba Velem!</h2>
+                <p class="section-subtitle fade-in">Készen állsz a következő projektedre? Beszélgessünk!</p>
+                
+                <div class="contact-grid">
+                    <div class="contact-info slide-in-left">
+                        <h3 style="margin-bottom: 2rem; color: var(--text-dark);">Elérhetőségeim</h3>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4>Email</h4>
+                                <p>bellerzoltanezra@gmail.com</p>
+                            </div>
+                        </div>
+                         <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-facebook-f"></i>
+                            </div>
+                            <div>
+                                <h4>Facebook</h4>
+                                <p><a href="https://www.facebook.com/zoltan.gonczi.12/" target="_blank" style="color: var(--text-light); text-decoration: none;">facebook.com/zoltan.gonczi.12</a></p>
+                            </div>
+                        </div>
+                         <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-instagram"></i>
+                            </div>
+                            <div>
+                                <h4>Instagram</h4>
+                                <p><a href="https://www.instagram.com/beller_zoltan_ezra" target="_blank" style="color: var(--text-light); text-decoration: none;">instagram.com/beller_zoltan_ezra</a></p>
+                            </div>
+                        </div>
+                         <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-linkedin-in"></i>
+                            </div>
+                            <div>
+                                <h4>LinkedIn</h4>
+                                <p><a href="https://www.linkedin.com/in/zolt%C3%A1n-bell%C3%A9r-9748152a3/" target="_blank" style="color: var(--text-light); text-decoration: none;">linkedin.com/in/zoltán-bellér</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <form class="contact-form slide-in-right" action="https://formsubmit.co/bellerzoltanezra@gmail.com" method="POST" id="contactForm">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Teljes név</label>
+                            <input type="text" id="name" name="TeljesNev" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email cím</label>
+                            <input type="email" id="email" name="EmailCim" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Tárgy</label>
+                            <input type="text" id="subject" name="Targy" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label">Üzenet</label>
+                            <textarea id="message" name="Uzenet" class="form-input form-textarea" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">
+                            <i class="fas fa-paper-plane"></i>
+                            Üzenet küldése
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2025 Bellér Zoltán Ezra | Senkisem EV. -  Minden jog fenntartva.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="scroll-top" id="scrollTop" title="Lap tetejére görgetés">
+        <i class="fas fa-chevron-up"></i>
+    </button>        
+    <script src="./js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodEzra</title>
+    
+    <meta name="description" content="Professional website creation with custom design and SEO optimization. Modern, responsive web development for businesses, affordable.">
+    <meta name="keywords" content="website creation, web development, responsive design, SEO optimization, custom website, Bellér Zoltán Ezra, portfolio, web design, modern website, affordable, ">
+    <meta name="author" content="Bellér Zoltán Ezra">
+    
+    <meta property="og:title" content="CodEzra | Web Development Services">
+    <meta property="og:description" content="Transform your ideas into reality with our innovative digital solutions.">
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="./css/main.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+
+</head>
+<body>
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loader"></div>
+    </div>
+
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="#home" class="logo">CodEzra</a>
+                <nav class="nav">
+                    <ul class="nav-menu" id="navMenu">
+                    <li>
+                    <a href="index.html" class="language-switch" style="padding: 0.5rem 0.75rem; font-weight: 500; border: 1px solid var(--text-light); border-radius: 0.5rem; color: var(--text-light); transition: background 0.3s ease;">
+                     HU | EN
+                    </a>
+                    </li>
+
+                        <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+                        <li><a href="#services" class="nav-link" data-section="services">Services</a></li>
+                        <li><a href="#portfolio" class="nav-link" data-section="portfolio">Portfolio</a></li>
+                        <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+                        <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+                    </ul>
+                    <button class="mobile-menu-btn" id="mobileMenuBtn" title="Toggle mobile menu">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+            <a href="#home" class="logo">CodEzra</a>
+            <button class="mobile-menu-btn" id="closeMobileMenu" title="Close menu">
+                <i class="fas fa-times"></i>
+            </button>            
+        </div>
+        <ul class="mobile-nav-menu">
+            <li>
+            <a href="index.html" class="mobile-nav-link" style="margin-top: 1rem; font-weight: 500; color: var(--text-dark); border: 1px solid var(--text-dark); border-radius: 0.5rem; padding: 0.4rem 0.75rem; display: inline-block;">
+             HU | EN
+            </a>
+            </li>
+
+            <li><a href="#home" class="mobile-nav-link" data-section="home">Home</a></li>
+            <li><a href="#services" class="mobile-nav-link" data-section="services">Services</a></li>
+            <li><a href="#portfolio" class="mobile-nav-link" data-section="portfolio">Portfolio</a></li>
+            <li><a href="#about" class="mobile-nav-link" data-section="about">About</a></li>
+            <li><a href="#contact" class="mobile-nav-link" data-section="contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container d-flex justify-center">
+                <div class="hero-content">
+                    <h1 class="hero-title">Transform Your Digital Vision</h1>
+                    <p class="hero-subtitle">I create stunning websites and digital experiences that captivate your audience and drive results.</p>
+                    <div class="hero-buttons">
+                        <a href="#portfolio" class="btn btn-primary">
+                            <i class="fas fa-rocket"></i>
+                            View My Work
+                        </a>
+                        <a href="#contact" class="btn btn-outline">
+                            <i class="fas fa-phone"></i>
+                            Let's Get Started!
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div>Scroll down</div>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </section>
+
+        <section id="services" class="section">
+            <div class="container">
+                <h2 class="section-title fade-in">My Services</h2>
+                <p class="section-subtitle fade-in">I offer comprehensive digital solutions to help your business thrive</p>
+                <div class="services-grid">
+                    <div class="service-card fade-in">
+                        <div class="service-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3 class="service-title">Custom Website Development</h3>
+                        <p class="service-description">Designing and developing modern, responsive, and user-friendly websites with the latest technologies.</p>
+                    </div>
+                    <div class="service-card fade-in">
+                        <div class="service-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h3 class="service-title">SEO Optimization</h3>
+                        <p class="service-description">Optimizing your website for search engines to achieve higher rankings on Google and drive more organic traffic to your site.</p>
+                    </div>
+                    <div class="service-card fade-in">
+                        <div class="service-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3 class="service-title">Responsive Design</h3>
+                        <p class="service-description">Ensuring your website displays perfectly on all devices: desktop, tablet, and mobile, providing an optimized user experience.</p>
+                    </div>
+                    <div class="service-card fade-in">
+                        <div class="service-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h3 class="service-title">Web Design and Branding</h3>
+                        <p class="service-description">Creating an appealing and professional visual identity that reflects your brand and makes your website memorable.</p>
+                    </div>
+                    <div class="service-card fade-in">
+                        <div class="service-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <h3 class="service-title">E-commerce Solutions</h3>
+                        <p class="service-description">Complete online stores with secure payment systems and inventory management to boost your online sales.</p>
+                    </div>
+                    <div class="service-card fade-in">
+                        <div class="service-icon">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <h3 class="service-title">Cloud and Hosting Consulting</h3>
+                        <p class="service-description">Scalable cloud infrastructure and deployment solutions for modern businesses, ensuring your website runs stably and fast.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="section" style="background: var(--bg-light);">
+            <div class="container">
+                <h2 class="section-title fade-in">Latest Works</h2>
+                <p class="section-subtitle fade-in">Explore my latest projects and creative solutions</p>
+            
+
+                <div class="portfolio-grid" id="portfolioGrid">
+                    <div class="portfolio-item fade-in" data-category="app">
+                        <div class="portfolio-image">
+                            <img src="./images/signaler.png" alt="Signaler website preview" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3 class="portfolio-title">Signaler.hu - Stock Market Indicators</h3>
+                            <p class="portfolio-category">Web Application</p>
+                            <a href="https://signaler.onrender.com" target="_blank" aria-label="View Signaler website" class="external-link"><i class='fas fa-external-link-alt'></i></a>
+                        </div>
+                    </div>
+                    <div class="portfolio-item fade-in" data-category="ecommerce">
+                        <div class="portfolio-image">
+                            <img src="./images/senkisem.png" alt="Senkisem website preview" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3 class="portfolio-title">Senkisem - Clothing Brand Webshop</h3>
+                            <p class="portfolio-category">Webshop</p>
+                            <a href="https://senkisem.hu" target="_blank" aria-label="View Senkisem website" class="external-link"><i class='fas fa-external-link-alt'></i></a>
+                        </div>
+                    </div>
+                <div class="portfolio-grid" id="portfolioGrid">
+                    <div class="portfolio-item fade-in" data-category="web">
+                        <div class="portfolio-image">
+                            <img src="./images/linkfluencer.png" alt="linkfluencer website preview" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3 class="portfolio-title">Linkfluencer - Affiliate Platform</h3>
+                            <p class="portfolio-category">Web Application</p>
+                            <a href="https://linkfluencer.hu" target="_blank" aria-label="View Linkfluencer website" class="external-link"><i class='fas fa-external-link-alt'></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section stats">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item fade-in">
+                        <div class="stat-number" data-target="5">0</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                    <div class="stat-item fade-in">
+                        <div class="stat-number" data-target="5">0</div>
+                        <div class="stat-label">Satisfied Clients</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<section id="about" class="section">
+    <style>
+        /* Default styles for large screens */
+        .about-content-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            margin-top: 3rem;
+        }
+
+        .about-image img {
+            max-width: 100%;
+            max-height: 100%;
+            width: auto;
+            height: auto;
+            border-radius: 1rem;
+            object-fit: cover;
+        }
+
+        /* Media query for small devices (e.g., mobile) */
+        @media (max-width: 768px) {
+            .about-content-grid {
+                grid-template-columns: 1fr; /* Single column in mobile view */
+                gap: 2rem; /* Smaller gap in mobile view */
+            }
+
+            .about-image {
+                order: -1; /* Image comes first in mobile view */
+                text-align: center; /* Center align image */
+            }
+
+            .about-image img {
+                max-width: 80%; /* Smaller image in mobile view */
+                height: auto;
+            }
+        }
+    </style>
+    <div class="container">
+        <h2 class="section-title fade-in">About Me</h2>
+        
+        <div class="about-content-grid">
+            <div class="slide-in-left">
+                <h3 style="font-size: 2rem; margin-bottom: 1.5rem; color: var(--text-dark);">My Story</h3>
+                <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 2rem;">
+                    I am Zoltán Ezra Bellér – a web developer, visual thinker, and entrepreneur.
+For me, code and design are not separate entities, but tools to create valuable and functional digital experiences.
+
+I learned development through my own projects and have since been working with a systematic approach and business mindset. It is important to me that what I build is not only visually appealing but also functionally sound.
+
+I believe in clear communication, well-thought-out structures, and continuous development – whether during a new project or a long-term collaboration.
+                </p>
+                <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 2rem;">
+                    My knowledge and experience extend to visual design, user experience (UX) optimization, and search engine optimization (SEO), ensuring your website not only looks good but is also easily discoverable on Google. I believe in personalized solutions and continuous communication to ensure the final result precisely matches your vision.
+                </p>
+                <a href="images/beller_zoltan_ezra-CV.pdf" class="btn btn-primary" target="_blank">View Resume</a>
+            </div>
+            <div class="slide-in-right about-image">
+                <img src="./images/bze.png" alt="Bellér Zoltán Ezra portrait">
+            </div>
+        </div>
+    </div>
+</section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title fade-in">Get in Touch!</h2>
+                <p class="section-subtitle fade-in">Ready for your next project? Let's talk!</p>
+                
+                <div class="contact-grid">
+                    <div class="contact-info slide-in-left">
+                        <h3 style="margin-bottom: 2rem; color: var(--text-dark);">Contact Details</h3>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4>Email</h4>
+                                <p>bellerzoltanezra@gmail.com</p>
+                            </div>
+                        </div>
+                           <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-facebook-f"></i>
+                            </div>
+                            <div>
+                                <h4>Facebook</h4>
+                                <p><a href="https://www.facebook.com/zoltan.gonczi.12/" target="_blank" style="color: var(--text-light); text-decoration: none;">facebook.com/zoltan.gonczi.12</a></p>
+                            </div>
+                        </div>
+                           <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-instagram"></i>
+                            </div>
+                            <div>
+                                <h4>Instagram</h4>
+                                <p><a href="https://www.instagram.com/beller_zoltan_ezra" target="_blank" style="color: var(--text-light); text-decoration: none;">instagram.com/beller_zoltan_ezra</a></p>
+                            </div>
+                        </div>
+                           <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-linkedin-in"></i>
+                            </div>
+                            <div>
+                                <h4>LinkedIn</h4>
+                                <p><a href="https://www.linkedin.com/in/zolt%C3%A1n-bell%C3%A9r-9748152a3/" target="_blank" style="color: var(--text-light); text-decoration: none;">linkedin.com/in/zoltán-bellér</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <form class="contact-form slide-in-right" action="https://formsubmit.co/bellerzoltanezra@gmail.com" method="POST" id="contactForm">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Full Name</label>
+                            <input type="text" id="name" name="Full Name" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" id="email" name="Email Address" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" id="subject" name="Subject" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea id="message" name="Message" class="form-input form-textarea" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2025 Bellér Zoltán Ezra | Senkisem EV. - All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="scroll-top" id="scrollTop" title="Scroll to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>        
+    <script src="./js/main.js"></script>
+</body>
+</html>
