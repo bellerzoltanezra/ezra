@@ -352,27 +352,31 @@ Hiszek a tiszta kommunikációban, az átgondolt struktúrákban és a folyamato
                     </div>
                     
                     <form class="contact-form slide-in-right" action="https://formsubmit.co/bellerzoltanezra@gmail.com" method="POST" id="contactForm">
-                        <div class="form-group">
-                            <label for="name" class="form-label">Teljes név</label>
-                            <input type="text" id="name" name="TeljesNev" class="form-input" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email" class="form-label">Email cím</label>
-                            <input type="email" id="email" name="EmailCim" class="form-input" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="subject" class="form-label">Tárgy</label>
-                            <input type="text" id="subject" name="Targy" class="form-input" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message" class="form-label">Üzenet</label>
-                            <textarea id="message" name="Uzenet" class="form-input form-textarea" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary" style="width: 100%;">
-                            <i class="fas fa-paper-plane"></i>
-                            Üzenet küldése
-                        </button>
-                    </form>
+                            <input type="hidden" name="_captcha" value="false"> <!-- Captcha kikapcsolása -->
+    <input type="hidden" name="_next" value="https://bellerzoltanezra.hu/thankyou.html"> <!-- sikeroldal -->
+    <input type="hidden" name="_template" value="table"> <!-- szép táblázatos e-mail formátum -->
+
+    <div class="form-group">
+        <label for="name" class="form-label">Teljes név</label>
+        <input type="text" id="name" name="name" class="form-input" required>
+    </div>
+    <div class="form-group">
+        <label for="email" class="form-label">Email cím</label>
+        <input type="email" id="email" name="email" class="form-input" required>
+    </div>
+    <div class="form-group">
+        <label for="subject" class="form-label">Tárgy</label>
+        <input type="text" id="subject" name="subject" class="form-input" required>
+    </div>
+    <div class="form-group">
+        <label for="message" class="form-label">Üzenet</label>
+        <textarea id="message" name="message" class="form-input form-textarea" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary" style="width: 100%;">
+        <i class="fas fa-paper-plane"></i>
+        Üzenet küldése
+    </button>
+</form>
                 </div>
             </div>
         </section>
