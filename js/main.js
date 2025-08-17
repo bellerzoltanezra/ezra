@@ -172,30 +172,35 @@ document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right').forEach(e
 
 // EmailJS Kontakt űrlap kezelése
 const contactForm = document.getElementById('contactForm');
-contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    
-    const submitBtn = contactForm.querySelector('button[type="submit"]');
-    const originalText = submitBtn.innerHTML;
-    
-    // Gomb állapotának frissítése a küldés alatt
-    submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Küldés...';
-    submitBtn.disabled = true;
 
-    // Email küldése az EmailJS-szel
-    emailjs.sendForm('service_9jnlmve', 'template_130u7qj', this)
-        .then(() => {
-            alert('Köszönöm az üzeneted! Hamarosan felveszem veled a kapcsolatot.');
-            contactForm.reset(); // Űrlap törlése sikeres küldés után
-        }, (error) => {
-            alert('Sikertelen üzenetküldés. Kérlek, próbáld újra később vagy írj közvetlenül e-mailt a bellerzoltanezra@gmail.com címre.');
-            console.error('EmailJS Hiba:', error);
-        })
-        .finally(() => {
-            submitBtn.innerHTML = originalText;
-            submitBtn.disabled = false;
-        });
-});
+if (contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const submitBtn = contactForm.querySelector('button[type="submit"]');
+        const originalText = submitBtn.innerHTML;
+        
+        // Gomb állapotának frissítése a küldés alatt
+        submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Küldés...';
+        submitBtn.disabled = true;
+
+        // Email küldése az EmailJS-szel
+        emailjs.sendForm('service_9jnlmve', 'template_130u7qj', contactForm)
+            .then(function(response) {
+                console.log('SUCCESS!', response.status, response.text);
+                alert('Köszönöm az üzeneted! Hamarosan felveszem veled a kapcsolatot.');
+                contactForm.reset(); // Űrlap törlése sikeres küldés után
+            })
+            .catch(function(error) {
+                console.error('EmailJS Hiba:', error);
+                alert('Sikertelen üzenetküldés. Kérlek, próbáld újra később vagy írj közvetlenül e-mailt a bellerzoltanezra@gmail.com címre.');
+            })
+            .finally(function() {
+                submitBtn.innerHTML = originalText;
+                submitBtn.disabled = false;
+            });
+    });
+}
 
 
 // Scroll to Top Button
