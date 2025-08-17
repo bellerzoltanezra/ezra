@@ -183,7 +183,7 @@ contactForm.addEventListener('submit', (e) => {
     submitBtn.disabled = true;
 
     // Email küldése az EmailJS-szel
-    emailjs.sendForm('service_9jnlmve', 'YOUR_TEMPLATE_ID', this)
+    emailjs.sendForm('service_9jnlmve', 'template_130u7qj', this)
         .then(() => {
             alert('Köszönöm az üzeneted! Hamarosan felveszem veled a kapcsolatot.');
             contactForm.reset(); // Űrlap törlése sikeres küldés után
